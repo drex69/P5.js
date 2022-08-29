@@ -1,0 +1,48 @@
+conditions to be met, for making a lander, steal a human
+
+DRAFT 1.0
+---------
+1.Are there any humans to steal (YES > step2, NO > step 10)
+2.Is there a stealer already spawned (YES > step10, NO step 3)
+3.Are there are any landers to turn into a stealer (YES > step4, NO > step10)
+4.Choose 1 lander from the landers, that are on screen
+  (probability of changing into a stealer 1\1000)
+
+10. Do nothing
+
+DRAFT 2.0
+---------
+1.Are there any humans to steal (YES > step2, NO > step 10)
+2.Is there a stealer already spawned (YES > step10, NO step 3)
+3.Are there are any landers to turn into a stealer (YES > step4, NO > step10)
+4.Is lander within distance to pickup a human (Check all humans) (YES > step5, NO > step10)
+5.Probability to steal 1/500  (YES > step 6, NO > step 10)
+6.turn lander into stealer
+
+10. Do nothing
+
+Conditions, for an existing stealers
+------------------------------------
+1.if human captured by player (turn stealer back into lander)
+2.other wise, capture human
+
+Gameplay for baiter
+-------------------
+After <ENTER TIME> a baiter will spawn in, if the level hasn't been cleared.
+After every <ENTER TIME> another baiter will spawn in, and so on.....
+
+
+ID numbers
+-----------
+0 = lander
+1 = mutant
+2 = bomber
+3 = pod
+4 = swarmer
+5 = stealer
+9 = humans
+10 = moving bullet
+11 = static bullet
+12 = baiter
+
+100 = anything in enemy array is dead, so delete it

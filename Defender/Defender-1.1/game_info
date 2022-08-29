@@ -1,0 +1,31 @@
+conditions to be met, for making a lander, steal a human
+
+1.Are there any humans to steal (YES > step2, NO > step 10)
+2.Is there a stealer already spawned (YES > step10, NO step 3)
+3.Are there are any landers to turn into a stealer (YES > step4, NO > step10)
+4.Choose 1 lander from the landers, that are on screen
+  (probability of changing into a stealer 1\1000)
+
+10. Do nothing
+
+
+conditions, for an existing stealers
+
+1.if human captured by player (turn stealer back into lander)
+2.other wise, capture human
+
+
+
+ID numbers
+-----------
+0 = lander
+1 = mutant
+2 = bomber
+3 = pod
+4 = swarmer
+9 = humans
+
+10 = moving bullet
+11 = static bullet
+
+100 = human died
